@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>NCBI Homepage Redesign</title>
+    <!-- fa -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- sidebar css -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <!-- video header css-->
+    <link href="css\headerstyles.css" rel="stylesheet">
+    <!-- six grid -->
+    <link href="css\gridstyles.css" rel="stylesheet">
+    <!--  blog css -->
+    <link href="css\blogstyles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,800,900%7cRaleway:300,400,500,600,700" rel="stylesheet">
+    <!-- footer css -->
+    <link href="css\footerstyles.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+    <!-- video header -->
+    <header>
+        <div class="overlay">
+            <h1>
+            </h1>
+        </div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                  <source src="ncbivideo.mp4" type="video/mp4">
+                </video>
+
+        <div class="container h-100">
+            <div class="d-flex text-center h-100">
+                <div class="my-auto w-100 text-white">
+                    <!-- <h1 class="display-3"> -->
+                    <img class="img-fluid ncbipic" src="ncbilogo.jpg" alt="">
+                    <!-- </h1> -->
+                    <h2 style="color: black; padding-top: 1rem;">National Center For Biotechnology Information</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end video header -->
+    <div class="d-flex" id="wrapper">
+
+
+
+
+        <!-- Sidebar -->
+
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading">Resources</div>
+            <div class="list-group list-group-flush">
+                <a href="https://www.ncbi.nlm.nih.gov/guide/all/" class="list-group-item list-group-item-action bg-light">All Resources </a>
+                <a href="https://www.ncbi.nlm.nih.gov/guide/chemicals-bioassays/" class="list-group-item list-group-item-action bg-light">Chemicals & Bioessays</a>
+                <a href="https://www.ncbi.nlm.nih.gov/guide/data-software/" class="list-group-item list-group-item-action bg-light">Data & Software</a>
+                <a href="https://www.ncbi.nlm.nih.gov/guide/dna-rna/" class="list-group-item list-group-item-action bg-light">DNA & RNA</a>
+                <a href="https://www.ncbi.nlm.nih.gov/guide/domains-structures/" class="list-group-item list-group-item-action bg-light">Domains & Structures</a>
+                <a href="https://www.ncbi.nlm.nih.gov/guide/genes-expression/" class="list-group-item list-group-item-action bg-light"> Genes & Expression</a>
+                <a href="https://www.ncbi.nlm.nih.gov/guide/genetics-medicine/" class="list-group-item list-group-item-action bg-light"> Genetics & Medicine</a>
+                <a href="https://www.ncbi.nlm.nih.gov/guide/genomes-maps/" class="list-group-item list-group-item-action bg-light"> Genomes & Maps</a>
+                <a href="https://www.ncbi.nlm.nih.gov/guide/homology/" class="list-group-item list-group-item-action bg-light"> Homology</a>
+                <a href="https://www.ncbi.nlm.nih.gov/guide/literature/" class="list-group-item list-group-item-action bg-light"> Literature</a>
+                <a href="https://www.ncbi.nlm.nih.gov/guide/proteins/" class="list-group-item list-group-item-action bg-light"> Proteins</a>
+                <a href="https://www.ncbi.nlm.nih.gov/guide/sequence-analysis/" class="list-group-item list-group-item-action bg-light"> Sequence Analyisis</a>
+                <a href="https://www.ncbi.nlm.nih.gov/guide/taxonomy/" class="list-group-item list-group-item-action bg-light"> Taxonomy</a>
+                <a href="https://www.ncbi.nlm.nih.gov/guide/training-tutorials/" class="list-group-item list-group-item-action bg-light"> Training & Tutorials</a>
+                <a href="https://www.ncbi.nlm.nih.gov/guide/variation/" class="list-group-item list-group-item-action bg-light"> Variation</a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+
+        <div id="page-content-wrapper">
+
+            <div class="container">
+                <!-- search -->
+                <h5></h5>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="input-group">
+                            <input class="form-control border-secondary py-2" type="search" value="search">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end search -->
+
+                    <nav class="navbar navbar-expand-lg navbar-light  ">
+                        <button class="btn btn-primary" id="menu-toggle">Resources</button>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li> -->
+                                <!-- <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> All Databases
+              </a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li> -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> How To
+              </a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="https://www.ncbi.nlm.nih.gov/guide/all/#howtos">All How To</a>
+                                        <a class="dropdown-item" href="https://www.ncbi.nlm.nih.gov/guide/chemicals-bioassays/#howtos">Chemicals & Bioessays</a>
+                                        <a class="dropdown-item" href="https://www.ncbi.nlm.nih.gov/guide/data-software/#howtos">Data & Software</a>
+                                        <a class="dropdown-item" href="https://www.ncbi.nlm.nih.gov/guide/dna-rna/#howtos">DNA & RNA</a>
+                                        <a class="dropdown-item" href="https://www.ncbi.nlm.nih.gov/guide/domains-structures/#howtos">Domains & Structures</a>
+                                        <a class="dropdown-item" href="https://www.ncbi.nlm.nih.gov/guide/genes-expression/#howtos">Genes & Expression</a>
+                                        <a class="dropdown-item" href="https://www.ncbi.nlm.nih.gov/guide/genetics-medicine/#howtos">Genetics & Medicine</a>
+                                        <a class="dropdown-item" href="https://www.ncbi.nlm.nih.gov/guide/genomes-maps/#howtos">Genomes & Maps</a>
+                                        <a class="dropdown-item" href="https://www.ncbi.nlm.nih.gov/guide/homology/#howtos">Homology</a>
+                                        <a class="dropdown-item" href="https://www.ncbi.nlm.nih.gov/guide/literature/#howtos">Literature</a>
+                                        <a class="dropdown-item" href="https://www.ncbi.nlm.nih.gov/guide/proteins/#howtos">Proteins</a>
+                                        <a class="dropdown-item" href="https://www.ncbi.nlm.nih.gov/guide/sequence-analysis/#howtos">Sequence Analysis</a>
+                                        <a class="dropdown-item" href="https://www.ncbi.nlm.nih.gov/guide/taxonomy/#howtos">Taxonomy</a>
+                                        <a class="dropdown-item" href="https://www.ncbi.nlm.nih.gov/guide/training-tutorials/#howtos">Training & Tutorials</a>
+                                        <a class="dropdown-item" href="https://www.ncbi.nlm.nih.gov/guide/variation/#howtos">Variation</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="https://www.ncbi.nlm.nih.gov/account/?back_url=https%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fguide%2Fvariation%2F%23howtos">Sign in to NCBI<span class="sr-only">(current)</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- about -->
+                    <div class="container-fluid text-center">
+                        <h1 class="mt-4 text-center">Welcome To NCBI</h1>
+                        <p>The National Center for Biotechnology Information advances science and health by providing access to biomedical and genomic information.</p>
+
+                        <ul class="horzlist">
+                            <li class="lee"><a href="https://www.ncbi.nlm.nih.gov/home/about/">About the NCBI</a></li>
+                            <li class="lee"><a href="https://www.ncbi.nlm.nih.gov/home/about/mission/">Mission</a></li>
+                            <li class="lee"><a href="https://www.ncbi.nlm.nih.gov/home/about/structure/">Organization</a></li>
+                            <li class="lee"><a href="https://ncbiinsights.ncbi.nlm.nih.gov/">NCBI News and Blog</a></li>
+                        </ul>
+                        <br>
+
+                    </div>
+                    <!-- six grid -->
+
+
+
+                    <div class="container text-center">
+                        <div class="row text-center">
+
+                            <!--team-1-->
+                            <div class="col-lg-4">
+                                <div class="our-team-main">
+
+                                    <div class="team-front">
+                                        <i class="fas fa-upload fa-4x"></i>
+                                        <h3>Submit</h3>
+                                        <p></p>
+                                    </div>
+
+                                    <div class="team-back text-center team-text">
+                                        <span><a href="https://www.ncbi.nlm.nih.gov/home/submit/">
+                                            Deposit data or manuscripts into NCBI databases</a>
+            </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--team-1-->
+
+                            <!--team-2-->
+                            <div class="col-lg-4">
+                                <div class="our-team-main">
+
+                                    <div class="team-front">
+                                        <i class="fas fa-download fa-4x"></i>
+                                        <h3>Download</h3>
+                                        <p></p>
+                                    </div>
+
+                                    <div class="team-back text-center team-text">
+                                        <span><a href="https://www.ncbi.nlm.nih.gov/home/download/"> Transfer NCBI data to your computer</a>
+            
+            </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--team-2-->
+
+                            <!--team-3-->
+                            <div class="col-lg-4">
+                                <div class="our-team-main">
+
+                                    <div class="team-front">
+                                        <i class="fas fa-book fa-4x"></i>
+                                        <h3>Learn</h3>
+                                        <p></p>
+                                    </div>
+
+                                    <div class="team-back text-center team-text">
+                                        <span><a href="https://www.ncbi.nlm.nih.gov/home/learn/">Find help documents, attend a class or watch a tutorial</a>
+            
+            </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--team-3-->
+
+                            <!--team-4-->
+                            <div class="col-lg-4">
+                                <div class="our-team-main">
+
+                                    <div class="team-front">
+                                        <i class="fas fa-laptop fa-4x"></i>
+                                        <h3>Develop</h3>
+                                        <p></p>
+                                    </div>
+
+                                    <div class="team-back text-center team-text">
+                                        <span> <a href="https://www.ncbi.nlm.nih.gov/home/develop/"> NCBI APIs and code librairies to build applications</a>
+            
+            </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--team-4-->
+
+                            <!--team-5-->
+                            <div class="col-lg-4">
+                                <div class="our-team-main">
+
+                                    <div class="team-front">
+                                        <i class="fas fa-chart-bar fa-4x"></i>
+                                        <h3>Analyze</h3>
+                                        <p></p>
+                                    </div>
+
+                                    <div class="team-back text-center team-text">
+                                        <span> <a href="https://www.ncbi.nlm.nih.gov/home/analyze/">Identify an NCBI tool for your data analysis task</a> 
+            
+            </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--team-5-->
+
+                            <!--team-6-->
+                            <div class="col-lg-4">
+                                <div class="our-team-main">
+
+                                    <div class="team-front">
+                                        <i class="fas fa-dna fa-4x"></i>
+                                        <h3>Research</h3>
+                                        <p></p>
+                                    </div>
+
+                                    <div class="team-back text-center team-text">
+                                        <span><a href="https://www.ncbi.nlm.nih.gov/research/">NCBI research and collaborative projects</a> 
+           
+            </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--team-6-->
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- blog preview -->
+                <section class="blog-me pt-100 pb-100" id="blog">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 mx-auto text-center">
+                                <div class="section-title mb-100">
+
+                                    <h4>NCBI Blog</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <!-- Single Blog -->
+                                <div class="single-blog">
+                                    <div class="blog-img img-fluid">
+                                        <!-- <img src="clinvar.png" alt=""> -->
+                                        <div class="post-category">
+                                            <a href="#">11 Oct 2019</a>
+                                        </div>
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="blog-title">
+                                            <h4><a href="https://ncbiinsights.ncbi.nlm.nih.gov/2019/10/11/visit-the-new-clinvar-for-easier-variant-interpretation/">Visit the new ClinVar for easier variant interpretation!</a></h4>
+                                            <div class="meta">
+                                                <ul>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <p>The new ClinVar The new design for ClinVar pages is now our default view! Thank you for the feedback on the new design while it was under development. The redesigned pages have several new features described in
+                                            a previous post. The current …</p>
+                                        <a href="https://ncbiinsights.ncbi.nlm.nih.gov/2019/10/11/visit-the-new-clinvar-for-easier-variant-interpretation/" class="box_btn">read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <!-- Single Blog -->
+                                <div class="single-blog">
+                                    <div class="blog-img">
+                                        <div class="post-category">
+                                            <a href="#">09 Oct 2019</a>
+                                        </div>
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="blog-title">
+                                            <h4><a href="https://ncbiinsights.ncbi.nlm.nih.gov/2019/10/09/new-publication-on-amrfinder-a-tool-that-identifies-resistance-genes-in-pathogen-genomes/">New publication on AMRFinder, a tool that identifies resistance genes in pathogen genomes!</a></h4>
+                                            <div class="meta">
+                                                <ul>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <p>Read the recent publication (PMID: 31427293) on the AMRFinder, a tool that identifies antimicrobial resistance (AMR) genes in bacterial genome sequences using a high-quality curated AMR gene reference …<br></p>
+                                        <a href="https://ncbiinsights.ncbi.nlm.nih.gov/2019/10/09/new-publication-on-amrfinder-a-tool-that-identifies-resistance-genes-in-pathogen-genomes/" class="box_btn">read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <!-- Single Blog -->
+                                <div class="single-blog">
+                                    <div class="blog-img">
+                                        <!-- <img src="http://infinityflamesoft.com/html/abal-preview/assets/img/blog/blog3.jpg" alt=""> -->
+                                        <div class="post-category">
+                                            <a href="#">08 Oct 2019</a>
+                                        </div>
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="blog-title">
+                                            <h4><a href="https://ncbiinsights.ncbi.nlm.nih.gov/2019/10/08/ncbi-ashg-2019-data-colabs-nextgen-sequence-data-genetic-variation-population-data/">NCBI at ASHG 2019: Two Data CoLabs Demonstrate How to Analyze NextGen Sequence Data and Access Genetic Variation Population Data</a></h4>
+                                            <div class="meta">
+                                                <ul>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <p>NCBI will be attending the American Society of Human Genetics (ASHG) 2019 in Houston Texas on Oct 15-19. This year, we will be presenting …</p>
+                                        <a href="https://ncbiinsights.ncbi.nlm.nih.gov/2019/10/08/ncbi-ashg-2019-data-colabs-nextgen-sequence-data-genetic-variation-population-data/" class="box_btn">read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- end blog preview -->
+
+
+
+
+                <!-- /#page-content-wrapper -->
+
+            </div>
+            <!-- footer -->
+            <section id="footer">
+                <div class="container">
+                    <div class="row text-center text-xs-center">
+                        <div class="col-sm-4 puppy">
+                            <h5>Getting Started</h5>
+                            <ul class="list-unstyled quick-links">
+                                <li><a href="https://www.ncbi.nlm.nih.gov/home/learn/"><i class="fa fa-angle-double-right"></i>NCBI Education</a></li>
+                                <li><a href="https://www.ncbi.nlm.nih.gov/books/NBK3831/"><i class="fa fa-angle-double-right"></i>NCBI Help Manual</a></li>
+                                <li><a href="https://www.ncbi.nlm.nih.gov/books/NBK143764/"><i class="fa fa-angle-double-right"></i>NCBI Handbook</a></li>
+                                <li><a href="https://www.ncbi.nlm.nih.gov/home/learn/"><i class="fa fa-angle-double-right"></i>Training & Tutorials</a></li>
+                                <li><a href="https://www.ncbi.nlm.nih.gov/home/submit/"><i class="fa fa-angle-double-right"></i>Submit Data</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 kitten">
+                            <h5>Popular Resources</h5>
+                            <div class="mini-col">
+                                <div class="column">
+                                    <ul class="list-unstyled quick-links">
+                                        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/"><i class="fa fa-angle-double-right"></i>PubMed</a></li>
+                                        <li><a href="https://www.ncbi.nlm.nih.gov/books/"><i class="fa fa-angle-double-right"></i>Bookshelf</a></li>
+                                        <li><a href="https://www.ncbi.nlm.nih.gov/pmc/"><i class="fa fa-angle-double-right"></i>PubMed Central</a></li>
+                                        <li><a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi"><i class="fa fa-angle-double-right"></i>BLAST</a></li>
+                                        <li><a href="https://www.ncbi.nlm.nih.gov/nucleotide/"><i class="fa fa-angle-double-right"></i>Nucleotide</a></li>
+                                    </ul>
+                                </div>
+                                <div class="column">
+                                    <ul class="list-unstyled quick-links">
+                                        <li><a href="https://www.ncbi.nlm.nih.gov/genome/"><i class="fa fa-angle-double-right"></i>Genome</a></li>
+                                        <li><a href="https://www.ncbi.nlm.nih.gov/snp/"><i class="fa fa-angle-double-right"></i>SNP</a></li>
+                                        <li><a href="https://www.ncbi.nlm.nih.gov/gene/"><i class="fa fa-angle-double-right"></i>Gene</a></li>
+                                        <li><a href="https://www.ncbi.nlm.nih.gov/protein/"><i class="fa fa-angle-double-right"></i>Protein</a></li>
+                                        <li><a href="https://pubchem.ncbi.nlm.nih.gov/"><i class="fa fa-angle-double-right"></i>PubChem</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 ">
+                            <h5>Featured</h5>
+                            <div class="mini-col">
+                                <div class="column">
+                                    <ul class="list-unstyled quick-links">
+                                        <li><a href="https://www.ncbi.nlm.nih.gov/gtr/"><i class="fa fa-angle-double-right"></i>Genetic Testing Registry</a></li>
+                                        <li><a href="https://www.ncbi.nlm.nih.gov/genbank/"><i class="fa fa-angle-double-right"></i>GenBank</a></li>
+                                        <li><a href="https://www.ncbi.nlm.nih.gov/refseq/"><i class="fa fa-angle-double-right"></i>Reference Sequence</a></li>
+                                        <li><a href="https://www.ncbi.nlm.nih.gov/geo/"><i class="fa fa-angle-double-right"></i>Gene Expression Omnibus</a></li>
+                                        <li><a href="https://www.ncbi.nlm.nih.gov/genome/gdv/"><i class="fa fa-angle-double-right"></i>Genome Data Viewer</a></li>
+                                    </ul>
+                                </div>
+                                <div class="column">
+                                    <ul class="list-unstyled quick-links">
+                                        <li><a href="https://www.ncbi.nlm.nih.gov/genome/guide/human/"><i class="fa fa-angle-double-right"></i>Human Genome</a></li>
+                                        <li><a href="https://www.ncbi.nlm.nih.gov/genome?term=mus%20musculus"><i class="fa fa-angle-double-right"></i>Mouse Genome</a></li>
+                                        <li><a href="https://www.ncbi.nlm.nih.gov/genomes/FLU/Database/nph-select.cgi?go=database"><i class="fa fa-angle-double-right"></i>Influenza Virus</a></li>
+                                        <li><a href="https://www.ncbi.nlm.nih.gov/tools/primer-blast/"><i class="fa fa-angle-double-right"></i>Primer-BLAST</a></li>
+                                        <li><a href="https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?"><i class="fa fa-angle-double-right"></i>Sequence Read Archive</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                            <ul class="list-unstyled list-inline social text-center">
+                                <h1 class="text-center" style="font-size: 1rem; color: white;">Follow NCBI</h1>
+                                <li class="list-inline-item"><a href="https://www.facebook.com/ncbi.nlm"><i class="fa fa-facebook"></i></a></li>
+                                <li class="list-inline-item"><a href="https://twitter.com/ncbi"><i class="fa fa-twitter"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.youtube.com/ncbinlm"><i class="fa fa-youtube"></i></a></li>
+
+                            </ul>
+                        </div>
+                        </hr>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                            <p><strong>This is not the official NCBI website. This website was redesigned and coded by Jacob Ybarra</strong></p>
+                            <p><u><a href="https://www.ncbi.nlm.nih.gov/"></u> National Center for Biotechnology Information</a>, U.S. National Library of Medicine 8600 Rockville Pike, Bethesda MD, 20894 USA</p>
+                            <p class="h6">&copy All right Reversed.
+                                <a class="text-green ml-2" href="#" target="_blank"></a>
+                            </p>
+                        </div>
+                        </hr>
+                    </div>
+                </div>
+            </section>
+            <!-- end footer -->
+            <!-- /#wrapper -->
+
+            <!-- Bootstrap core JavaScript -->
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+            <!-- Menu Toggle Script -->
+            <script>
+                $("#menu-toggle").click(function(e) {
+                    e.preventDefault();
+                    $("#wrapper").toggleClass("toggled");
+                });
+            </script>
+
+</body>
+
+</html>
